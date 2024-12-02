@@ -1,0 +1,15 @@
+[package]
+name = "argoneon-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex = "1.10.6"
+rppal = "0.19.0"
+serde = {version = "1.0.210", features = ["serde_derive"]}
+toml = "0.8.19"
+
+
+[profile.release]
+strip = true
+lto = true
