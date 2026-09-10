@@ -4,6 +4,7 @@ mod config;
 mod fanctrl;
 mod files;
 mod sensors;
+mod rtc;
 
 fn main() {
     let cfg_string = fs::read_to_string("argon.toml").expect("failed to read config");

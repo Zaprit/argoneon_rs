@@ -2,7 +2,7 @@ use std::collections::HashMap;
 
 // i2c address of the fan
 pub const FAN_ADDR: u16 = 0x1a;
-
+pub const RTC_ADDR: u16 = 0x51;
 #[derive(serde::Deserialize)]
 pub struct Config {
     pub hdd_fan_curve: Option<HashMap<i8, u8>>,
